@@ -1,0 +1,104 @@
+#main{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:100px;
+}
+.container-main{
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.box img{
+    width:100px;
+}
+.container-main .judul{
+    margin-bottom:15px;
+    align-self:start;
+}
+.container-main .judul p{
+    font-weight:bold;
+}
+.container-main .kategori{
+    align-self:center;
+}
+.container-main .kategori ul{
+    display: flex;
+    column-gap:30px;
+    list-style:none;
+}
+.container-main .kategori ul li{
+    text-align:center;
+    background-color: #E2D4F0;
+    border-radius:12px;
+    cursor:pointer;
+    width:150px;
+    height:45px;
+}
+.container-main .kategori ul li a{
+    text-decoration:none;
+    color:#000;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:12px;
+    cursor:pointer;
+    transition: all 0.1s;
+    padding-left:25px;
+}
+.container-main .kategori ul li a i{
+   padding-right:10px;
+}
+
+.container-main .kategori ul li:hover a{
+    background-color:#7126B5;
+    color:white;
+}
+.container-main .kategori ul li:hover i{
+    color:white;
+}
+.grid-produk{
+    width:100%;
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(auto, 180px));
+    grid-template-row:repeat(2, 100px);
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+}
+
+.grid-produk .box{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding:5px;
+    border-radius:4px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:start;
+    transition:all 0.3s;
+    cursor:pointer;
+}
+.grid-produk .box img{
+    width:100%;
+    border-radius:4px;
+}
+.grid-produk .box p{
+    margin:3px;
+}
+.grid-produk .box p:nth-child(3) {
+    font-size:14px;
+    font-weight:200;
+}
+.grid-produk .box p:last-child {
+    margin-bottom:10px;
+}
+.grid-produk .box:hover{
+    background-color: #ccc;
+}
